@@ -1,0 +1,9 @@
+{
+  "name": "demo-react-ts-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xiaojianbu/demo-react-ts-template.git",
+  "scripts": {},
+  "author": "xiaojianbu <360085819@qq.com>",
+  "license": "MIT"
+}
