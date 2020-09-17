@@ -6,7 +6,7 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
-    node: true,
+    node: true
   },
   extends: [
     'airbnb',
@@ -18,24 +18,24 @@ module.exports = {
     'prettier',
     'prettier/@typescript-eslint',
     'prettier/react',
-    'prettier/unicorn',
+    'prettier/unicorn'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 11,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.tsx', '.ts', '.js', '.json'],
+        extensions: ['.tsx', '.ts', '.js', '.json']
       },
-      typescript: {},
-    },
+      typescript: {}
+    }
   },
   rules: {
     'import/extensions': [
@@ -44,8 +44,8 @@ module.exports = {
       {
         ts: 'never',
         tsx: 'never',
-        js: 'never',
-      },
+        js: 'never'
+      }
     ],
     'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
     'import/prefer-default-export': OFF,
@@ -64,17 +64,17 @@ module.exports = {
           // 下划线
           snakeCase: false,
           // 大驼峰
-          pascalCase: true,
-        },
-      },
+          pascalCase: true
+        }
+      }
     ],
     'unicorn/no-array-instanceof': WARN,
     'unicorn/no-for-loop': WARN, // 使用 for of 和 .entries 代替传统的 for 循环
     'unicorn/prefer-add-event-listener': [
       ERROR,
       {
-        excludedPackages: ['koa', 'sax'],
-      },
+        excludedPackages: ['koa', 'sax']
+      }
     ],
     'unicorn/prefer-query-selector': ERROR,
     'unicorn/no-null': OFF,
@@ -86,7 +86,10 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': OFF,
     '@typescript-eslint/no-explicit-any': OFF,
 
-    'react/jsx-filename-extension': [ERROR, { extensions: ['.tsx', 'ts', '.jsx', 'js'] }],
+    'react/jsx-filename-extension': [
+      ERROR,
+      { extensions: ['.tsx', 'ts', '.jsx', 'js'] }
+    ],
     'react/jsx-indent-props': [ERROR, 2],
     'react/jsx-indent': [ERROR, 2],
     'react/jsx-one-expression-per-line': OFF,
@@ -106,7 +109,6 @@ module.exports = {
     'no-plusplus': OFF,
     'no-console': OFF,
     'class-methods-use-this': ERROR,
-    'jsx-quotes': [ERROR, 'prefer-single'],
-    'global-require': OFF,
-  },
+    'global-require': OFF
+  }
 }
